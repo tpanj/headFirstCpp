@@ -59,10 +59,10 @@ void testDuck(Duck* duck) {
 
 //! Client
 int main() {
-    std::auto_ptr<MallardDuck> duck (new MallardDuck());
+    std::unique_ptr<MallardDuck> duck (new MallardDuck());
     
-    std::auto_ptr<WildTurkey> turkey (new WildTurkey());
-    std::auto_ptr<Duck> turkeyAdapter (new TurkeyAdapter(turkey.get()));
+    std::unique_ptr<WildTurkey> turkey (new WildTurkey());
+    std::unique_ptr<Duck> turkeyAdapter (new TurkeyAdapter(turkey.get()));
     
     std::cout << "The Turkey says..." << std::endl;
     turkey->gobble();

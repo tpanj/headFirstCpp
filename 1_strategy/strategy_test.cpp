@@ -5,7 +5,6 @@
  *      Author: Tadej
  */
 #include <iostream>
-#include <vector>
 #include "strategy.h"
 
 using namespace std;

@@ -1,6 +1,11 @@
 project (DesignPatterns)
 cmake_minimum_required (VERSION 2.6)
 
+if (WIN32)
+else (WIN32)
+  add_definitions(-O3 -std=gnu++11)
+endif (WIN32)
+
 add_executable(1 1_strategy/strategy_test.cpp 1_strategy/strategy.cpp 1_strategy/strategy.h)
 add_executable(2 2_observer/observer.cpp)
 add_executable(3 3_decorator/decorator.cpp)
