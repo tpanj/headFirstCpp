@@ -1,10 +1,3 @@
-/*
- * Tadej.cpp
- *
- *  Created on: 30. jan. 2015
- *      Author: Tadej
- */
-
 #include "strategy.h"
 #include <iostream>
 
@@ -20,13 +13,3 @@ void Squeak::quack() { cout << "Squeak" << "\n"; return; }
 
 void MallardDuck::display() { cout << "I'm a real Mallar Duck" << "\n"; return; }
 void ModelDuck::display() { cout << "I'm a model Duck" << "\n"; return; }
-//TadejPanjtar::TadejPanjtar() {
-//	// TODO Auto-generated constructor stub
-//
-//}
-//
-//TadejPanjtar::~TadejPanjtar() {
-//	// TODO Auto-generated destructor stub
-//}
-
-
